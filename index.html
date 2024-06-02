@@ -3,48 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital clock</title>
+    <title>Contact-form</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    
-<div class ="hero">
-    <div class="container">
-        <div class="clock">
-            <span id="HOURS">00</span>
-            <span>:</span>
-            <span id="MINUTES">00</span>
-            <span>:</span>
-            <span id="SECONDS">00</span>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class = "contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="02a06e77-9b8f-482c-8531-d6e69f6cec48" >
+            <input type="text" name="name" placeholder="Your name" class="contact-input" required>
+            <input type="email" name="name" placeholder="Your email" class="contact-input" required>
+            <textarea name="message" placeholder="Your Message" class="contact-input" required ></textarea>
+            <button type="submit">Submit <img src="" alt=""></button>
+
+        </form>
+        <div class="contact-right">
+            <img src="assets/folders.png" alt="">
+
         </div>
     </div>
-</div>
-
-<script>
-
-    let hrs = document.getElementById("HOURS");
-    let min = document.getElementById("MINUTES");
-    let sec = document.getElementById("SECONDS");
-
-    let currentTime = new Date();
-
-    setInterval(()=> {
-
-        let currentTime = new Date();
-            
-    hrs.innerHTML = currentTime.getHours();
-    min.innerHTML = currentTime.getMinutes();
-    sec.innerHTML = currentTime.getSeconds();
-
-
-    },1000)
-
-    hrs.innerHTML = currentTime.getHours();
-    min.innerHTML = currentTime.getMinutes();
-    sec.innerHTML = currentTime.getSeconds();
-
-</script>
-
 </body>
 </html>
