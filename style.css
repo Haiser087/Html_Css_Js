@@ -1,94 +1,141 @@
-*{
+*
+{
     margin: 0;
-    padding:0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.hero
-{
-    width: 100% ;
-    min-height: 100vh;
-    background: linear-gradient(45deg , #344dd8 , #0e080b); 
-    color: #fff;
-    position: relative;
-}
-
-.container
-{
-    width: 800px;
-    height: 180px;
-    position: absolute;
-    top: 50% ;
-    left: 50%;
-    transform: translate(-50% , -50%);
- }
-
- .clock{
-    width: 100%;
+body, html{
     height: 100%;
-    background: rgba(235 , 0 , 255 , 0.11);
-    border-radius: 10px;
+    width: 100%;
+   
+}
+#nav
+{
+    height: 100px;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    
+}
+#nav-part1
+{
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(10px);
- }
+    gap: 5px;
+}
 
- .container::before
- {
-    content:'';
-    width: 180px;
-    height:180px;
-    background: #7a0985;
-    position: absolute;
-    left: -50px;
-    top: -50px;
-    z-index: -1;
- }
-
- .container::after
- {
-    content:'';
-    width: 180px;
-    height:180px;
-    background: #28d4c6;
-    border-radius: 50%;
-    position: absolute;
-    right: -30px;
-    bottom: -50px;
-    z-index: -1;
- }
-
- .clock span
- {
-    font-size: 80px;|
-    width: 110px;
-    display: inline-block ;
-    text-align: conter;
-    position: relative;
-    padding: 10px;
- }
-
- .clock span::after
- {
-    
+#nav h3
+{
+    font-size: 15px;
+    border: 2px solid black;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+#nav i
+{
+    font-size: 15px;
+    border: 2px solid black;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+#nav button
+{ 
+    padding: 7px 12px;
+    border-radius: 50px;
+    border: 1.5 solid black;
     font-size: 16px;
+    font-weight: 600;
+}
+#btn2
+{
+    background-color: orangered
+
+}
+#main>h1{
+    color: black;
+    font-size: 150px;
+    text-transform:uppercase;
     position: absolute;
-    bottom: -5px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
- }
-
- #HOURS::after{
-    content: 'Hours';
- }
-
- #MINUTES::after
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+ img
  {
-    content: 'Minutes';
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+
  }
 
- #SECONDS::after{
-    content: 'Seconds';
+ #img1
+ {
+    transform: translate(-50%,-50%) rotate(-30deg);
+ }
+ 
+ #img2
+ {
+    transform: translate(-50%,-50%)  rotate(-20deg);
+ }
+ 
+ #img3
+ {
+    transform: translate(-50%,-50%) rotate(-10deg);
+ }
+
+ #btn-left
+ {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 18px;
+ }
+ #insta
+ {
+    position:absolute;
+    bottom: 5%;
+    right: 10%;
+    font-size: 25px;
+    background-color: white;
+    border: none; 
+    
+ }
+ #youtube
+ {
+    position:absolute;
+    bottom: 5%;
+    right: 6%;
+    font-size: 25px;
+    background-color: white;
+    border: none; 
+    
+ }
+ #facebook
+ {
+       position:absolute;
+       bottom: 5%;
+       right: 2%;
+       font-size: 25px;
+       background-color: white;
+       border: none;   
+    
+ }
+ #btn-right
+ {
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+    font-size: 18px;
  }
